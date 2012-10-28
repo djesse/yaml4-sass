@@ -1719,22 +1719,4 @@
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
   }
-
-  /*------------------------------------------------------------------------------------------------------*/
-  /* (en) optional output of acronyms and abbreviations*/
-  /* (de) optionale Ausgabe von Auszeichnung von Abkürzungen */
-  abbr[title]:after,
-  acronym[title]:after {
-    content: "(" attr(title) ")";
-  }
-
-  /*------------------------------------------------------------------------------------------------------*/
-  /* (en) optional URL output of hyperlinks in print layout */
-  /* (de) optionale Ausgabe der URLs von Hyperlinks */
-  a[href]:after {
-    content: " <URL:" attr(href) ">";
-    color: #444;
-    background: inherit;
-    font-style: italic;
-  }
 }
