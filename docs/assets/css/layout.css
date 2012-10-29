@@ -284,22 +284,17 @@
   .ym-form div {
     position: relative;
   }
-  .ym-form label,
-  .ym-form .ym-message {
+  .ym-form label, .ym-form .ym-message {
     position: relative;
     display: block;
   }
   .ym-form .ym-fbox-check label {
     display: inline;
   }
-  .ym-form input,
-  .ym-form textarea {
+  .ym-form input, .ym-form textarea {
     cursor: text;
   }
-  .ym-form input[type="checkbox"],
-  .ym-form input[type="radio"],
-  .ym-form select,
-  .ym-form label {
+  .ym-form input[type="checkbox"], .ym-form input[type="radio"], .ym-form select, .ym-form label {
     cursor: pointer;
   }
   .ym-form textarea {
@@ -308,17 +303,11 @@
   .ym-form input[type=hidden] {
     display: none !important;
   }
-  .ym-form .ym-fbox-text:before,
-  .ym-form .ym-fbox-select:before,
-  .ym-form .ym-fbox-check:before,
-  .ym-form .ym-fbox-button:before {
+  .ym-form .ym-fbox-text:before, .ym-form .ym-fbox-select:before, .ym-form .ym-fbox-check:before, .ym-form .ym-fbox-button:before {
     content: "";
     display: table;
   }
-  .ym-form .ym-fbox-text:after,
-  .ym-form .ym-fbox-select:after,
-  .ym-form .ym-fbox-check:after,
-  .ym-form .ym-fbox-button:after {
+  .ym-form .ym-fbox-text:after, .ym-form .ym-fbox-select:after, .ym-form .ym-fbox-check:after, .ym-form .ym-fbox-button:after {
     clear: both;
     content: ".";
     display: block;
@@ -326,9 +315,7 @@
     height: 0;
     visibility: hidden;
   }
-  .ym-form select,
-  .ym-form input,
-  .ym-form textarea {
+  .ym-form select, .ym-form input, .ym-form textarea {
     display: block;
     position: relative;
     width: 58.5%;
@@ -342,28 +329,21 @@
     overflow: visible;
     width: auto;
   }
-  .ym-form .ym-fbox-check input:focus,
-  .ym-form .ym-fbox-check input:hover,
-  .ym-form .ym-fbox-check input:active {
+  .ym-form .ym-fbox-check input:focus, .ym-form .ym-fbox-check input:hover, .ym-form .ym-fbox-check input:active {
     border: 0 none;
   }
 
-  .ym-full .ym-fbox-select select,
-  .ym-full .ym-fbox-text input,
-  .ym-full .ym-fbox-text textarea {
+  .ym-full .ym-fbox-select select, .ym-full .ym-fbox-text input, .ym-full .ym-fbox-text textarea {
     width: 94.2%;
     margin-right: -3px;
   }
 
-  .ym-columnar .ym-fbox-text label,
-  .ym-columnar .ym-fbox-select label {
+  .ym-columnar .ym-fbox-text label, .ym-columnar .ym-fbox-select label {
     display: inline;
     float: left;
     width: 30%;
   }
-  .ym-columnar .ym-fbox-select select,
-  .ym-columnar .ym-fbox-text input,
-  .ym-columnar .ym-fbox-text textarea {
+  .ym-columnar .ym-fbox-select select, .ym-columnar .ym-fbox-text input, .ym-columnar .ym-fbox-text textarea {
     float: left;
     width: 67.2%;
     margin-right: -3px;
@@ -375,8 +355,7 @@
     position: absolute;
     top: 0;
   }
-  .ym-columnar .ym-fbox-check input,
-  .ym-columnar .ym-error .ym-message {
+  .ym-columnar .ym-fbox-check input, .ym-columnar .ym-error .ym-message {
     margin-left: 30%;
   }
 
@@ -429,8 +408,7 @@
     padding: 0;
     list-style-type: none;
   }
-  .ym-skiplinks .ym-skip:focus,
-  .ym-skiplinks .ym-skip:active {
+  .ym-skiplinks .ym-skip:focus, .ym-skiplinks .ym-skip:active {
     left: 32768px;
     outline: 0 none;
     position: absolute;
@@ -705,9 +683,7 @@
   * Styling for: <labels>, <input>, <textarea> and <select>
   *
   */
-  .ym-form input,
-  .ym-form textarea,
-  .ym-form select {
+  .ym-form input, .ym-form textarea, .ym-form select {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -722,16 +698,11 @@
     box-sizing: border-box;
   }
 
-  .ym-columnar .ym-fbox-select select input,
-  .ym-columnar .ym-fbox-select select textarea,
-  .ym-columnar .ym-fbox-text input,
-  .ym-columnar .ym-fbox-text textarea {
+  .ym-columnar .ym-fbox-select select input, .ym-columnar .ym-fbox-select select textarea, .ym-columnar .ym-fbox-text input, .ym-columnar .ym-fbox-text textarea {
     width: 70%;
   }
 
-  .ym-full .ym-fbox-select select,
-  .ym-full .ym-fbox-text input,
-  .ym-full .ym-fbox-text textarea {
+  .ym-full .ym-fbox-select select, .ym-full .ym-fbox-text input, .ym-full .ym-fbox-text textarea {
     width: 100%;
   }
 }
@@ -766,10 +737,7 @@
     color: #666;
     padding-top: 0.25em;
   }
-  .ym-form div.ym-fbox-text,
-  .ym-form div.ym-fbox-select,
-  .ym-form div.ym-fbox-check,
-  .ym-form div.ym-fbox-button {
+  .ym-form div.ym-fbox-text, .ym-form div.ym-fbox-select, .ym-form div.ym-fbox-check, .ym-form div.ym-fbox-button {
     padding: 0.3em 1em;
     margin-bottom: 0.5em;
   }
@@ -844,9 +812,7 @@
   .ym-form .ym-error input, .ym-form .ym-error select, .ym-form .ym-error textarea {
     border: 1px #800 solid;
   }
-  .ym-form .ym-error input:hover, .ym-form .ym-error input:focus,
-  .ym-form .ym-error select:hover, .ym-form .ym-error select:focus,
-  .ym-form .ym-error textarea:hover, .ym-form .ym-error textarea:focus {
+  .ym-form .ym-error input:hover, .ym-form .ym-error input:focus, .ym-form .ym-error select:hover, .ym-form .ym-error select:focus, .ym-form .ym-error textarea:hover, .ym-form .ym-error textarea:focus {
     border: 1px #800 solid !important;
   }
   .ym-form .ym-error .ym-message {
@@ -854,9 +820,7 @@
     font-weight: bold;
     margin-top: 0;
   }
-  .ym-form div.ym-fbox-text input:focus, .ym-form div select:focus, .ym-form div textarea:focus,
-  .ym-form div.ym-fbox-text input:hover, .ym-form div select:hover, .ym-form div textarea:hover,
-  .ym-form div.ym-fbox-text input:active, .ym-form div select:active, .ym-form div textarea:active {
+  .ym-form div.ym-fbox-text input:focus, .ym-form div select:focus, .ym-form div textarea:focus, .ym-form div.ym-fbox-text input:hover, .ym-form div select:hover, .ym-form div textarea:hover, .ym-form div.ym-fbox-text input:active, .ym-form div select:active, .ym-form div textarea:active {
     border: 1px #888 solid;
     background: #fff;
   }
@@ -1023,8 +987,7 @@
   }
 
   /* ie6 support styles - redefined buttons, because of missing support for attribute selectors */
-  * html .ym-button,
-  * html .ym-form button {
+  * html .ym-button, * html .ym-form button {
     display: inline-block;
     white-space: nowrap;
     background-color: #ccc;
@@ -1039,25 +1002,21 @@
     /* removes extra side spacing in IE */
     text-decoration: none !important;
   }
-  * html .ym-form button:focus,
-  * html .ym-button:focus {
+  * html .ym-form button:focus, * html .ym-button:focus {
     outline: 0;
     background: #fafafa;
   }
-  * html .ym-form button:hover,
-  * html .ym-button:hover {
+  * html .ym-form button:hover, * html .ym-button:hover {
     background-color: #ddd;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
   }
-  * html .ym-form button:active,
-  * html .ym-button:active {
+  * html .ym-form button:active, * html .ym-button:active {
     background-color: #bbb;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc', EndColorStr='#bbbbbb');
     position: relative;
     top: 1px;
   }
-  * html .ym-button.ym-disabled,
-  * html .ym-button.ym-disabled:hover {
+  * html .ym-button.ym-disabled, * html .ym-button.ym-disabled:hover {
     background: #eee;
     color: #aaa !important;
     border-color: #aaa;
@@ -1768,8 +1727,7 @@
     text-align: left;
     border-top: 1px solid #ccc;
   }
-  tbody tr:hover th,
-  tbody tr:hover td {
+  tbody tr:hover th, tbody tr:hover td {
     background: #f8f8f8;
   }
 }
@@ -1796,24 +1754,6 @@
   /* (de) Vermeidung von Seitenumbrüchen direkt nach einer Überschrift */
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
-  }
-
-  /*------------------------------------------------------------------------------------------------------*/
-  /* (en) optional output of acronyms and abbreviations*/
-  /* (de) optionale Ausgabe von Auszeichnung von Abkürzungen */
-  abbr[title]:after,
-  acronym[title]:after {
-    content: "(" attr(title) ")";
-  }
-
-  /*------------------------------------------------------------------------------------------------------*/
-  /* (en) optional URL output of hyperlinks in print layout */
-  /* (de) optionale Ausgabe der URLs von Hyperlinks */
-  a[href]:after {
-    content: " <URL:" attr(href) ">";
-    color: #444;
-    background: inherit;
-    font-style: italic;
   }
 }
 /* Screen Design */
