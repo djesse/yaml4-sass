@@ -50,6 +50,15 @@
 		.ym-gbox-right {
 			padding-left: 0.25em;
 		}
+<<<<<<< HEAD
+=======
+
+		.ym-fbox-multicol select,
+		.ym-fbox-multicol input,
+		.ym-fbox-multicol textarea {
+			width:100%;
+		}
+>>>>>>> 452d706106cc01ea21030357c18714ab27f89ce5
 	}
 
 	.ym-full {
@@ -255,7 +264,11 @@
 		&.ym-xlarge { font-size: 1.5em; } /* 21px */
 		&.ym-large { font-size: 1.2857em; } /* 18px */
 		&.ym-small { font-size: 0.8571em; } /* 12px */
+<<<<<<< HEAD
 		&.ym-xsmall { font-size: 0.7143em; } /* 10px */		
+=======
+		&.ym-xsmall { font-size: 0.7143em; } /* 10px */
+>>>>>>> 452d706106cc01ea21030357c18714ab27f89ce5
 	}
 
 	/* Button color scheme: primary */
