@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * YAML form theme: "gray-theme"
  */
@@ -40,11 +39,6 @@
   .ym-form .ym-gbox-right {
     padding-left: 0.25em;
   }
-  .ym-form .ym-fbox-select select,
-  .ym-form .ym-fbox-text input,
-  .ym-form .ym-fbox-text textarea {
-    width: 100%;
-  }
 
   .ym-full .ym-fbox-select select,
   .ym-full .ym-fbox-text input,
@@ -55,7 +49,7 @@
 @media screen, projection {
   .ym-form {
     background: #f4f4f4;
-    border: 2px white solid;
+    border: 2px #fff solid;
     margin: 1.5em 0 0 0;
     padding: 0;
     -webkit-box-shadow: 0 0 4px #dddddd;
@@ -139,7 +133,7 @@
     font-weight: bold;
   }
   .ym-form .ym-fbox-text input, .ym-form .ym-fbox-text textarea, .ym-form .ym-fbox-select select {
-    border: 1px solid #dddddd;
+    border: 1px solid #ddd;
   }
   .ym-form .ym-message {
     color: #666;
@@ -160,12 +154,12 @@
     font-weight: normal;
   }
   .ym-form .ym-error input, .ym-form .ym-error select, .ym-form .ym-error textarea {
-    border: 1px #880000 solid;
+    border: 1px #800 solid;
   }
   .ym-form .ym-error input:hover, .ym-form .ym-error input:focus,
   .ym-form .ym-error select:hover, .ym-form .ym-error select:focus,
   .ym-form .ym-error textarea:hover, .ym-form .ym-error textarea:focus {
-    border: 1px #880000 solid !important;
+    border: 1px #800 solid !important;
   }
   .ym-form .ym-error .ym-message {
     color: #800;
@@ -175,7 +169,7 @@
   .ym-form div.ym-fbox-text input:focus, .ym-form div select:focus, .ym-form div textarea:focus,
   .ym-form div.ym-fbox-text input:hover, .ym-form div select:hover, .ym-form div textarea:hover,
   .ym-form div.ym-fbox-text input:active, .ym-form div select:active, .ym-form div textarea:active {
-    border: 1px #888888 solid;
+    border: 1px #888 solid;
     background: #fff;
   }
 
@@ -197,11 +191,11 @@
     background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
     background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
-    border: 1px solid #777777;
+    border: 1px solid #777;
     border-radius: .2em;
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    color: #333333 !important;
+    color: #333 !important;
     cursor: pointer;
     font: normal 1em/2em Arial, Helvetica;
     margin: 1.5em 0.75em 0 0;
@@ -250,26 +244,25 @@
   }
 
   /* Button size-scaling classes */
-  .ym-xlarge {
+  .ym-button {
+    /* 21px */
+    /* 18px */
+    /* 12px */
+    /* 10px */
+  }
+  .ym-button.ym-xlarge {
     font-size: 1.5em;
   }
-
-  /* 21px */
-  .ym-large {
+  .ym-button.ym-large {
     font-size: 1.2857em;
   }
-
-  /* 18px */
-  .ym-small {
+  .ym-button.ym-small {
     font-size: 0.8571em;
   }
-
-  /* 12px */
-  .ym-xsmall {
+  .ym-button.ym-xsmall {
     font-size: 0.7143em;
   }
 
-  /* 10px */
   /* Button color scheme: primary */
   .ym-button.ym-primary,
   .ym-form button.ym-primary,
@@ -286,8 +279,8 @@
     background-image: -o-linear-gradient(top, #8888ee, #6666cc);
     background-image: linear-gradient(to bottom, #8888ee, #6666cc);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888ee', EndColorStr='#6666cc');
-    border: 1px solid #000077;
-    color: white !important;
+    border: 1px solid #007;
+    color: #fff !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
   .ym-button.ym-primary:hover,
@@ -342,8 +335,8 @@
     background-image: -o-linear-gradient(top, #66bb66, #449944);
     background-image: linear-gradient(to bottom, #66bb66, #449944);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66bb66', EndColorStr='#449944');
-    border: 1px solid #007700;
-    color: white !important;
+    border: 1px solid #070;
+    color: #fff !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
   .ym-button.ym-success:hover,
@@ -398,8 +391,8 @@
     background-image: -o-linear-gradient(top, #ddaa44, #bb7722);
     background-image: linear-gradient(to bottom, #ddaa44, #bb7722);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ddaa44', EndColorStr='#BB7722');
-    border: 1px solid #997700;
-    color: white !important;
+    border: 1px solid #970;
+    color: #fff !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
   .ym-button.ym-warning:hover,
@@ -454,8 +447,8 @@
     background-image: -o-linear-gradient(top, #bb6666, #994444);
     background-image: linear-gradient(to bottom, #bb6666, #994444);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#bb6666', EndColorStr='#994444');
-    border: 1px solid #770000;
-    color: white !important;
+    border: 1px solid #700;
+    color: #fff !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
   .ym-button.ym-danger:hover,
@@ -504,10 +497,10 @@
     text-align: center;
     font-size: 1.5em;
     margin: 0 1em 0 -1em;
-    padding: 0 0.2em;
+    padding: 0 .2em;
     -webkit-box-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), 2px 0 0 rgba(255, 255, 255, 0.5);
     box-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), 2px 0 0 rgba(255, 255, 255, 0.5);
-    border-radius: 0.15em 0 0 0.15em;
+    border-radius: .15em 0 0 .15em;
     pointer-events: none;
   }
 
@@ -588,7 +581,7 @@
   .ym-button.ym-disabled,
   .ym-button.ym-disabled:hover {
     background: #eee;
-    color: #aaaaaa !important;
+    color: #aaa !important;
     border-color: #aaa;
     cursor: default;
     text-shadow: none;
@@ -604,8 +597,8 @@
     white-space: nowrap;
     background-color: #ccc;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
-    border: 1px solid #777777;
-    color: #333333 !important;
+    border: 1px solid #777;
+    color: #333 !important;
     cursor: pointer;
     font: normal 1em/2em Arial, Helvetica;
     margin: 1.5em 0.75em 0 0;
@@ -634,7 +627,7 @@
   * html .ym-button.ym-disabled,
   * html .ym-button.ym-disabled:hover {
     background: #eee;
-    color: #aaaaaa !important;
+    color: #aaa !important;
     border-color: #aaa;
     cursor: default;
     text-shadow: none;
