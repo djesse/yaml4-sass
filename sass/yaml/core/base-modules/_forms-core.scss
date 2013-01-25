@@ -221,10 +221,10 @@
 	*/
 
 	.ym-form {
-		&.ym-inline .ym-fbox-select select,
-		&.ym-form.ym-inline .ym-fbox-text input,
-		.ym-fbox-select.ym-inline select,
-		.ym-fbox-text.ym-inline input {
+		&.ym-fbox-inline .ym-fbox-select select,
+		&.ym-form.ym-fbox-inline .ym-fbox-text input,
+		.ym-fbox-select.ym-fbox-inline select,
+		.ym-fbox-text.ym-fbox-inline input {
 			width: auto !important;
 			display: inline;
 			float: none;

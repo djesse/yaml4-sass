@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  *  "Yet Another Multicolumn Layout" - YAML CSS Framework
  *  (en) YAML core stylesheet
@@ -435,9 +434,9 @@
    /**
 	* Inline forms display - technical base (optional)
 	*/
-  .ym-form.ym-inline .ym-fbox-select select, .ym-form.ym-form.ym-inline .ym-fbox-text input,
-  .ym-form .ym-fbox-select.ym-inline select,
-  .ym-form .ym-fbox-text.ym-inline input {
+  .ym-form.ym-fbox-inline .ym-fbox-select select, .ym-form.ym-form.ym-fbox-inline .ym-fbox-text input,
+  .ym-form .ym-fbox-select.ym-fbox-inline select,
+  .ym-form .ym-fbox-text.ym-fbox-inline input {
     width: auto !important;
     display: inline;
     float: none;
