@@ -111,21 +111,18 @@
   ul {
     list-style-type: disc;
   }
-
-  ol {
-    list-style-type: decimal;
-  }
-
   ul ul {
     list-style-type: circle;
     margin-top: 0;
   }
 
+  ol {
+    list-style-type: decimal;
+  }
   ol ol {
     list-style-type: lower-latin;
     margin-top: 0;
   }
-
   ol ul {
     list-style-type: circle;
     margin-top: 0;
@@ -317,13 +314,11 @@
 
   .box {
     border-radius: 0.3em;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #888;
-    border-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #888888;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
     box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
-    color: #444;
+    color: #444444;
     color: rgba(0, 0, 0, 0.8);
     padding: 1.42857em;
     margin: 1.5em 0 0 0;
@@ -339,7 +334,6 @@
     vertical-align: middle;
     letter-spacing: normal;
     white-space: nowrap;
-    -webkit-border-radius: 3px;
     border-radius: 3px;
     background: #06C;
     color: #fff;
@@ -418,10 +412,10 @@
     background: #f0f0f0;
   }
   table.bordertable tbody th {
-    border-right: 1px solid #cccccc;
+    border-right: 1px #cccccc solid;
   }
   table.bordertable tbody td {
-    border-right: 1px solid #cccccc;
+    border-right: 1px #cccccc solid;
   }
 
   table caption {
@@ -455,12 +449,11 @@
   }
   tbody th {
     text-align: left;
-    border-top: 1px solid #cccccc;
-    text-align: left;
+    border-top: 1px #cccccc solid;
   }
   tbody td {
     text-align: left;
-    border-top: 1px solid #cccccc;
+    border-top: 1px #cccccc solid;
   }
   tbody tr:hover th,
   tbody tr:hover td {

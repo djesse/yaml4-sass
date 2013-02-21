@@ -42,6 +42,10 @@ $ym-font-sans				: "Droid Sans", Arial, Helvetica, sans-serif;
 $ym-font-serif				: "Droid Serif", Georgia, "Times New Roman", Times, serif;
 $ym-font-monospace			: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
 
+$ym-body-font 				: $ym-font-serif;
+$ym-header-font 			: $ym-font-sans;
+$ym-header-font-weight 		: 400;
+
 // Color Settings
 // ---------------------------------
 // standard typography colors
@@ -71,6 +75,17 @@ $ym-hr-color				: #eee;
 $ym-highlight-text-color	: #c30;
 $ym-dimmed-text-color		: #888;
 
+// abbr and acronym 
+// ---------------------------------------------------
+// border marking acronym and abbrevation
+$ym-acronym-abbr-border 	: 1px #aaa dotted;
+
+// Links
+// ---------------------------------------------------
+// text-decoration for link in different states
+$ym-a-text-decoration 		: none;
+$ym-a-hover-text-decoration : none;
+
 // Vertical Rhythm
 // ---------------------------------------------------
 // font values have to be defined in [px] without unit
@@ -98,3 +113,44 @@ $ym-h6-font-scale			: $ym-h6-font-size / $ym-base-font-size;
 $ym-text-font-scale			: 1;
 $ym-text-big-font-scale		: $ym-text-big-font-size / $ym-base-font-size;
 $ym-text-small-font-scale	: $ym-text-small-font-size / $ym-base-font-size;
+
+// Box
+// ---------------------------------------------------
+$ym-box-border-radius 		: 0.3em;
+$ym-box-border-width 		: 1px;
+$ym-box-border-style 		: solid;
+$ym-box-border-color-old 	: #888;
+$ym-box-border-color-modern : rgba(0,0,0,.3);
+$ym-box-color-old 			: #444;
+$ym-box-color-modern 		: rgba(0,0,0,.8);
+
+// Table
+// ---------------------------------------------------
+$ym-table-border-top 		: 1px #ccc solid;
+$ym-table-border-bottom 	: 1px #ccc solid;
+$ym-table-border-left 		: false;
+$ym-table-border-right 		: false;
+
+$ym-table-td-padding 		: ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height / 2 * 1em 0.5em;
+$ym-table-narrow-td-padding : 0 0.5em;
+
+$ym-table-bordertable-border 			: 1px #ccc solid;
+$ym-table-bordertable-background 		: #e0e0e0;
+$ym-table-bordertable-background-row 	: #f0f0f0;
+
+$ym-table-thead-border-top 				: false;
+$ym-table-thead-border-bottom 			: 2px #000 solid;
+$ym-table-thead-border-left 			: false;
+$ym-table-thead-border-right 			: false;
+
+$ym-table-tbody-th-border-top 			: 1px #ccc solid;
+$ym-table-tbody-th-border-bottom 		: false;
+$ym-table-tbody-th-border-left 			: false;
+$ym-table-tbody-th-border-right 		: false;
+
+$ym-table-tbody-td-border-top 			: 1px #ccc solid;
+$ym-table-tbody-td-border-bottom 		: false;
+$ym-table-tbody-td-border-left 			: false;
+$ym-table-tbody-td-border-right 		: false;
+
+$ym-table-row-hover-background 			:#f8f8f8;
