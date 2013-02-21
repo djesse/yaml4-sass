@@ -1,0 +1,18 @@
+/*--- Links ----------------------------------------------------------------------------------------- */
+
+a {
+	color:$ym-link-text-color;
+	background:$ym-link-bg-color;
+	text-decoration:$ym-a-text-decoration;
+}
+
+a:active { outline: none; }
+
+/* (en) maximum constrast for tab focus - change with great care */
+/* (en) Maximaler Kontrast für Tab Focus - Ändern Sie diese Regel mit Bedacht */
+a:hover,
+a:focus {
+	background-color: $ym-link-focus-bg-color;
+	color:$ym-link-focus-text-color;
+	text-decoration:$ym-a-hover-text-decoration;
+}

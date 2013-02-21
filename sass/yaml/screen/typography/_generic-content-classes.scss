@@ -1,0 +1,80 @@
+/**
+* ----------------------------------------------------------------------- #
+*
+* Generic Content Classes
+*
+* (en) standard classes for positioning and highlighting
+* (de) Standardklassen zur Positionierung und Hervorhebung
+*
+* @section content-generic-classes
+*/
+.highlight {
+	color:$ym-highlight-text-color;
+}
+
+.dimmed {
+	color:$ym-dimmed-text-color;
+}
+
+.box {
+	border-radius: $ym-box-border-radius;
+	border: $ym-box-border-width $ym-box-border-style $ym-box-border-color-old;
+	border: $ym-box-border-width $ym-box-border-style $ym-box-border-color-modern;
+	@include ym-box-shadow(1px,1px,3px,rgba(0,0,0,.2),inset);
+	color: $ym-box-color-old;
+	color: $ym-box-color-modern;
+	padding: ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height * 1em;
+	margin: $line-height*1em 0 0 0;
+
+	& > *:first-child {
+		margin-top: 0;
+	}
+}
+
+.label {
+	font-family: Verdana, Geneva, sans-serif;
+	padding: 1px 6px 2px;
+	display: inline-block;
+	vertical-align:middle;
+	letter-spacing: normal;
+	white-space:nowrap;
+	border-radius: 3px;
+	background: #06C;
+	color: #fff;
+	font-size: 10px;
+	line-height: 12px;
+}
+
+.info {
+	background:$ym-highlight-info-color;
+}
+
+.success {
+	background:$ym-highlight-success-color;
+}
+
+.warning {
+	background:$ym-highlight-warning-color;
+}
+
+.error {
+	background:$ym-highlight-error-color;
+}
+
+.float-left {
+	float:left;
+	display:inline;
+	margin: $line-height*1em 1em 0 0;
+}
+
+.float-right {
+	float:right;
+	display:inline;
+	margin: $line-height*1em 0 0 1em;
+}
+
+.center {
+	display:block;
+	text-align:center;
+	margin: $line-height*1em auto 0 auto;
+}

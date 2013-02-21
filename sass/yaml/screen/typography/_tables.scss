@@ -1,0 +1,151 @@
+/**
+* ------------------------------------------------------------------------------------------------- #
+*
+* Tables | Tabellen
+*
+* (en) Generic classes for table-width and design definition
+* (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen
+*
+* @section content-tables
+*/
+
+table {
+	width:100%;
+	border-collapse:collapse;
+	color:$ym-text-color;
+
+	@if $ym-table-border-top != false {
+	border-top: $ym-table-border-top;
+	}
+
+	@if $ym-table-border-bottom != false {
+	border-bottom: $ym-table-border-bottom;
+	}
+
+	@if $ym-table-border-left != false {
+	border-left: $ym-table-border-left;
+	}
+
+	@if $ym-table-border-right != false {
+	border-right: $ym-table-border-right;
+	}
+
+	margin: ($ym-base-line-height - 2 ) / $ym-base-line-height * $line-height * 1em 0 0 0;
+
+	&.narrow {
+		margin: ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height * 1em 0 0 0;
+
+		th, td {
+			padding: $ym-table-narrow-td-padding;
+			line-height: ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height;
+		}
+	}
+
+	&.bordertable {
+		border:$ym-table-bordertable-border;
+
+		thead th {
+			background:$ym-table-bordertable-background;
+			border-right:$ym-table-bordertable-border;
+			border-bottom:$ym-table-bordertable-border;
+		}
+
+		tbody {
+			th[scope="row"] {
+				background:$ym-table-bordertable-background-row;
+			}
+			th {
+				border-right:$ym-table-bordertable-border;
+			}
+			td {
+				border-right:$ym-table-bordertable-border;
+			}
+		}
+	}
+}
+
+table caption {
+	font-variant:small-caps;
+}
+
+th, td {
+	line-height: $line-height * 1em;
+	vertical-align: top;
+	padding: $ym-table-td-padding;
+}
+
+th *:first-child,
+td *:first-child {
+	margin-top: 0;
+}
+
+th.nowrap,
+td.nowrap {
+	white-space: nowrap;
+}
+
+thead th {
+	text-align: left;
+	color:#000;
+	@if $ym-table-thead-border-top != false {
+	border-top: $ym-table-thead-border-top;
+	}
+
+	@if $ym-table-thead-border-bottom != false {
+	border-bottom: $ym-table-thead-border-bottom;
+	}
+
+	@if $ym-table-thead-border-left != false {
+	border-left: $ym-table-thead-border-left;
+	}
+
+	@if $ym-table-thead-border-right != false {
+	border-right: $ym-table-thead-border-right;
+	}
+}
+
+tbody {
+	th {
+		text-align:left;
+		@if $ym-table-tbody-th-border-top != false {
+		border-top: $ym-table-tbody-th-border-top;
+		}
+
+		@if $ym-table-tbody-th-border-bottom != false {
+		border-bottom: $ym-table-tbody-th-border-bottom;
+		}
+
+		@if $ym-table-tbody-th-border-left != false {
+		border-left: $ym-table-tbody-th-border-left;
+		}
+
+		@if $ym-table-tbody-th-border-right != false {
+		border-right: $ym-table-tbody-th-border-right;
+		}
+	}
+
+	td {
+		text-align: left;
+		@if $ym-table-tbody-td-border-top != false {
+		border-top: $ym-table-tbody-td-border-top;
+		}
+
+		@if $ym-table-tbody-td-border-bottom != false {
+		border-bottom: $ym-table-tbody-td-border-bottom;
+		}
+
+		@if $ym-table-tbody-td-border-left != false {
+		border-left: $ym-table-tbody-td-border-left;
+		}
+
+		@if $ym-table-tbody-td-border-right != false {
+		border-right: $ym-table-tbody-td-border-right;
+		}
+	}
+
+	/* highlight row on mouse over */
+	tr:hover th,
+	tr:hover td {
+		background:$ym-table-row-hover-background;
+	}
+}

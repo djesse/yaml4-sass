@@ -1,0 +1,24 @@
+
+/* --- images ------------------ */
+
+img,
+figure {
+	margin: 0;
+}
+
+.flexible {
+	margin-top: $line-height*1em;
+	max-width: 100%;
+	height: auto;
+}
+
+* html .flexible {	/* IE6 support */
+	width: 98%;		/* 2% space for borders */
+}
+
+.bordered {
+	margin-top: $line-height*1em;
+	border: 2px #eee solid;
+	border: 2px rgba(255,255,255,1) solid;
+	@include ym-box-shadow(0,0,3px,rgba(0,0,0,.25));
+}
