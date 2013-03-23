@@ -9,9 +9,15 @@
   * Styling for: <labels>, <input>, <textarea> and <select>
   *
   */
-  .ym-form input,
-  .ym-form textarea,
-  .ym-form select {
+  .ym-form .ym-type-select select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 58%;
+  }
+  .ym-form .ym-type-text input,
+  .ym-form .ym-type-text textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -34,29 +40,29 @@
     box-sizing: border-box;
   }
 
-  .ym-columnar .ym-fbox-select select {
+  .ym-columnar .ym-type-select select {
     width: 68%;
   }
-  .ym-columnar .ym-fbox-text input,
-  .ym-columnar .ym-fbox-text textarea {
+  .ym-columnar .ym-type-text input,
+  .ym-columnar .ym-type-text textarea {
     width: 68%;
   }
   .ym-columnar .ym-fbox-grid {
     width: 70%;
   }
 
-  .ym-full .ym-fbox-select select,
-  .ym-full .ym-fbox-text input,
-  .ym-full .ym-fbox-text textarea {
+  .ym-full .ym-type-text input,
+  .ym-full .ym-type-text textarea,
+  .ym-full .ym-type-select select {
     width: 98%;
   }
   .ym-full .ym-fbox-grid {
     width: 100%;
   }
 
-  .ym-form .ym-fbox-grid input,
-  .ym-form .ym-fbox-grid textarea,
-  .ym-form .ym-fbox-grid select {
+  .ym-form .ym-fbox-grid .ym-type-text input,
+  .ym-form .ym-fbox-grid .ym-type-text textarea,
+  .ym-form .ym-fbox-grid .ym-type-select select {
     width: 100%;
   }
 }
@@ -91,14 +97,11 @@
     color: #666;
     padding-top: 0.25em;
   }
-  .ym-form .ym-fbox-text,
-  .ym-form .ym-fbox-select,
-  .ym-form .ym-fbox-check,
-  .ym-form .ym-fbox-button {
+  .ym-form .ym-fbox {
     padding: 0.3em 1em;
     margin-bottom: 0.5em;
   }
-  .ym-form .ym-fbox-button {
+  .ym-form .ym-type-button {
     background: #ececec;
     border-top: 1px #e0e0e0 solid;
     padding: 0 1em 1.5em 1em;
@@ -127,15 +130,14 @@
   */
   /* styling standard form elements with 'almost' equal flexible width */
   /* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
-  .ym-form .ym-fbox-text input, .ym-form .ym-fbox-text textarea {
+  .ym-form .ym-type-text input,
+  .ym-form .ym-type-text textarea {
     line-height: 1em;
-    padding: 0.25em 0.3em;
-    margin-top: -2px;
+    padding: 4px 0.3em;
   }
-  .ym-form .ym-fbox-select select {
+  .ym-form .ym-type-select select {
     line-height: 1em;
-    padding: 0.25em 2px 0.25em 1px;
-    margin-top: -2px;
+    padding: 3px 2px 3px 1px;
   }
   .ym-form input, .ym-form textarea, .ym-form select, .ym-form optgroup {
     font-family: Arial, Helvetica, sans-serif;
@@ -146,7 +148,9 @@
     font-style: normal;
     font-weight: bold;
   }
-  .ym-form .ym-fbox-text input, .ym-form .ym-fbox-text textarea, .ym-form .ym-fbox-select select {
+  .ym-form .ym-type-text input,
+  .ym-form .ym-type-text textarea,
+  .ym-form .ym-type-select select {
     border: 1px solid #dddddd;
   }
   .ym-form .ym-message {
@@ -180,9 +184,9 @@
     font-weight: bold;
     margin-top: 0;
   }
-  .ym-form div.ym-fbox-text input:focus, .ym-form div select:focus, .ym-form div textarea:focus,
-  .ym-form div.ym-fbox-text input:hover, .ym-form div select:hover, .ym-form div textarea:hover,
-  .ym-form div.ym-fbox-text input:active, .ym-form div select:active, .ym-form div textarea:active {
+  .ym-form .ym-type-text input:focus, .ym-form .ym-type-select select:focus, .ym-form .ym-type-text textarea:focus,
+  .ym-form .ym-type-text input:hover, .ym-form .ym-type-select select:hover, .ym-form .ym-type-text textarea:hover,
+  .ym-form .ym-type-text input:active, .ym-form .ym-type-select select:active, .ym-form .ym-type-text textarea:active {
     border: 1px #888888 solid;
     background: #fff;
   }
