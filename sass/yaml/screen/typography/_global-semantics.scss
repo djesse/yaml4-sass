@@ -1,0 +1,222 @@
+/* (en) reset font size for all elements to standard (16 Pixel) */
+/* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+html * { font-size:100%; }
+
+/**
+* (en) reset monospaced elements to font size 16px in all browsers
+* (de) Schriftgröße von monospaced Elemente in allen Browsern auf 16 Pixel setzen
+*
+* @see: http://webkit.org/blog/67/strange-medium/
+*/
+
+textarea,
+pre,
+code,
+kbd,
+samp,
+var,
+tt {
+	font-family: $ym-font-monospace;
+}
+
+body {
+	font-family: $ym-body-font;
+	/*! font-size: #{$ym-base-font-size}px; */
+	font-size: $ym-base-font-size / $ym-default-font-size * 100%;
+	color: $ym-text-color;
+
+	/* (en) Prevent auto-scaling of text in mobile webkit browsers */
+	/* (de) Automatische Schriftvergrößerung in mobilen Webkit-Browsern vermeiden */
+	-webkit-text-size-adjust:100%;
+}
+
+/*--- Headings | Überschriften ------------------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $ym-header-font;
+	font-weight: $ym-header-font-weight;
+	color: $ym-headings-color;
+	margin:0;
+}
+
+h1 {
+	/*! font-size: #{$ym-base-font-size * $ym-h1-font-scale}px; */
+	font-size: $ym-h1-font-scale * 100%;
+	line-height: 2 * $line-height / $ym-h1-font-scale;
+	margin: $line-height / $ym-h1-font-scale*1em 0 0;
+}
+
+h2 {
+	/*! font-size: #{$ym-base-font-size * $ym-h2-font-scale}px; */
+	font-size: $ym-h2-font-scale * 100%;
+	line-height: 2 * $line-height / $ym-h2-font-scale;
+	margin: $line-height / $ym-h2-font-scale*1em 0 0;
+}
+
+h3 {
+	/*! font-size: #{$ym-base-font-size * $ym-h3-font-scale}px; */
+	font-size: $ym-h3-font-scale * 100%;
+	line-height: 1 * $line-height / $ym-h3-font-scale;
+	margin: $line-height / $ym-h3-font-scale*1em 0 0;
+}
+
+h4 {
+	/*! font-size: #{$ym-base-font-size * $ym-h4-font-scale}px; */
+	font-size: $ym-h4-font-scale * 100%;
+	line-height: 1 * $line-height / $ym-h4-font-scale;
+	margin: $line-height / $ym-h4-font-scale*1em 0 0;
+}
+
+h5 {
+	/*! font-size: #{$ym-base-font-size * $ym-h5-font-scale}px; */
+	font-size: $ym-h5-font-scale * 100%;
+	line-height: 1 * $line-height / $ym-h5-font-scale;
+	margin: $line-height / $ym-h5-font-scale*1em 0 0;
+}
+
+h6 {
+	font-weight: bold;
+	/*! font-size: #{$ym-base-font-size * $ym-h6-font-scale}px; */
+	font-size: $ym-h6-font-scale * 100%;
+	line-height: 1 * $line-height / $ym-h6-font-scale;
+	margin: $line-height / $ym-h6-font-scale*1em 0 0;
+}
+
+/* --- Lists | Listen  -------------------------------------------------------------------------------- */
+
+ul,
+ol,
+dl {
+	font-size: $ym-text-font-scale * 100%;
+	line-height: 1 * $line-height / $ym-text-font-scale;
+	margin: $line-height / $ym-text-font-scale*1em 0 1em;
+}
+
+ul {
+	list-style-type:disc;
+	ul {
+		list-style-type:circle;
+		margin-top:0;
+	}		
+}
+
+ol {
+	list-style-type:decimal;
+	ol {
+		list-style-type:lower-latin;
+		margin-top:0;
+	}
+	ul {
+		list-style-type:circle;
+		margin-top:0;
+	}		
+}
+
+li {
+	font-size: $ym-text-font-scale * 100%;
+	line-height: 1 * $line-height / $ym-text-font-scale;
+	margin-left:0.8em;
+}
+
+dt { font-weight:bold; }
+
+dd { margin: 0 0 $line-height*1em 0.8em; }
+
+/* --- general text formatting | Allgemeine Textauszeichnung ------------------------------------------ */
+
+p {
+	font-size: $ym-text-font-scale * 100%;
+	line-height: 1 * $line-height / $ym-text-font-scale;
+	margin: $line-height / $ym-text-font-scale*1em 0 0;
+}
+
+blockquote, cite, q {
+	font-family: $ym-font-serif;
+	font-style:italic;
+}
+
+blockquote {
+	background:$ym-blockquote-bg-color;
+	color:$ym-blockquote-text-color;
+	margin: $line-height * 1em 0 0 1.5em;
+}
+
+strong, b { font-weight:bold; }
+
+em, i { font-style:italic; }
+
+big {
+	/*! font-size: #{$ym-base-font-size * $ym-text-big-font-scale}px; */
+	font-size: $ym-text-big-font-scale * 100%;
+	line-height: 1 * $line-height / $ym-text-big-font-scale;
+}
+
+small {
+	/*! font-size: #{$ym-base-font-size * $ym-text-small-font-scale}px; */
+	font-size: $ym-text-small-font-scale * 100%;
+	line-height: 1 * $line-height / $ym-text-small-font-scale;
+}
+
+pre,
+code,
+kbd,
+tt,
+samp,
+var {
+	font-size: $ym-text-font-scale * 100%;
+}
+
+pre {
+	font-size: $ym-text-font-scale * 100%;
+	line-height: 1 * $line-height / $ym-text-font-scale;
+	margin: $line-height / $ym-text-font-scale*1em 0 0;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+pre, code { color:$ym-pre-text-color; }
+
+kbd, samp, var, tt {
+	color:$ym-kbd-text-color;
+	font-weight:bold;
+}
+
+var, dfn { font-style:italic; }
+
+acronym, abbr {
+	border-bottom:$ym-acronym-abbr-border;
+	font-variant:small-caps;
+	letter-spacing:.07em;
+	cursor:help;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+mark {
+	background: $ym-mark-bg-color;
+	color: $ym-mark-text-color;
+}
+
+hr {
+	color:#fff;
+	background:transparent;
+	margin: 0 0 $line-height / 2 * 1em 0;
+	padding:0 0 (($ym-base-line-height / 2 - 1 ) / ($ym-base-line-height / 2 )) / 2 * $line-height * 1em 0;
+	border: 0;
+	border-bottom:1px $ym-hr-color solid;
+}
+
